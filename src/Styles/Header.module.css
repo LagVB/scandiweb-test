@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 80px;
+  padding-left: 101px;
+  padding-right: 101px;
+}
+
+.utilities,
+nav {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+  height: 100%;
+}
+
+.categories {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+}
+
+.category {
+  text-decoration: none;
+  padding-inline: 16px;
+  color: var(--c-black);
+  font-weight: 400;
+  font-size: 16px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  line-height: 120%;
+}
+
+.utilities {
+  display: flex;
+  column-gap: 22px;
+  justify-content: flex-end;
+}
+
+.cartButton,
+button {
+  all: unset;
+}
+
+.currencyButton {
+  all: unset;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  position: relative;
+}
+
+.currencyOptions {
+  box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+  display: flex;
+  justify-content: flex-start;
+  width: 114px;
+  cursor: pointer;
+}
+
+.currencyOptions button {
+  display: flex;
+  padding-left: 20%;
+  padding-top: 20px;
+  padding-bottom: 13px;
+  cursor: pointer;
+}
+
+.toggle {
+  display: flex;
+  background-color: white;
+  position: absolute;
+  flex-direction: column;
+  top: 70px;
+  left: -23px;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  z-index: 1;
+  row-gap: 5px;
+  padding: 12px 0px;
+}
+
+.toggle button:hover {
+  background-color: #eeeeee;
+  cursor: pointer;
+}
