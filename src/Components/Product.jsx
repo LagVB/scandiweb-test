@@ -22,7 +22,7 @@ class Product extends React.Component {
           <p>{product.prices[0].currency.symbol}</p>
           <p>{product.prices[0].amount}</p>
           <p>{product.brand}</p>
-          <a>ADD TO CART</a>
+          <a>ADD TOs CART</a>
         </>
       );
     }
